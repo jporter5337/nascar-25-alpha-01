@@ -14,7 +14,8 @@
         "Songs": "github:D4ngerKitty/RPGMuisic#f26c7df84609da0be7af7e16d2a64dcd095c1716",
         "pxt-sight": "github:felixtsu/pxt-sight#v0.2.2",
         "arcade-minimap": "github:microsoft/arcade-minimap#v0.6.1",
-        "pxt-arcade-image-transform": "github:robo-technical-group/pxt-arcade-image-transform#v1.0.9"
+        "pxt-arcade-image-transform": "github:robo-technical-group/pxt-arcade-image-transform#v1.0.9",
+        "block-menu": "github:riknoll/arcade-custom-menu#v0.0.1"
     },
     "files": [
         "main.blocks",

@@ -1,14 +1,11 @@
 /**
- * Initialize a variable to track spin or rotation state
- */
-/**
  * Variable Definitions
  */
 // Optional: handle collision with walls, reduce speed
 scene.onHitWall(SpriteKind.Player, function (sprite, location) {
     if (speed2 > 1) {
         speed2 += -5
-        if (speed2 < 0) {
+        if (0 < 0) {
             speed2 = 0
         }
     }
@@ -119,7 +116,6 @@ browserEvents.Three.onEvent(browserEvents.KeyEvent.Pressed, function () {
         .ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.
         `)
     pause(500)
-    Split_Screen()
 })
 function Free_Play () {
     let speed = 0
@@ -193,59 +189,658 @@ browserEvents.N.onEvent(browserEvents.KeyEvent.Pressed, function () {
 function Car () {
 	
 }
-function Split_Screen () {
+function careerstart () {
 	
 }
+function Split_Screen () {
+    let menu1 = 0
+    if (browserEvents.Two.isPressed() && menu1 == 2) {
+    	
+    }
+}
+/**
+ * Initialize a variable to track spin or rotation state
+ */
 browserEvents.Two.onEvent(browserEvents.KeyEvent.Pressed, function () {
-    music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-    mySprite2.setImage(assets.image`myImage5`)
-    mySprite.setImage(assets.image`myImage`)
-    mySprite3.setImage(img`
-        .ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.
-        ff66666666666666666666666666666666666666666666666666666666ff
-        f6999999999999999966666666666666666666666666666666666666666f
-        f69999999ff999999966666666666666666666666666666666666666666f
-        f699999999f999999966666666666666666666666666666666666666666f
-        f699999999f999999966666666666666666666666666666666666666666f
-        f699999999f999999966666666666666666666666666666666666666666f
-        f6999999ffff99999966ff6fff6f66f6fff66ff6ff6fff6ff6ff6f66f66f
-        f6999999999999999966f66f6f6f66f66f666f66f66f6f6f66f66ff6f66f
-        f6ffffffffffffffff66f66fff6f66f66f666f66f66fff6ff6ff6ff6f66f
-        f6ffffffffffffffff666f6f666f66f66f6666f6f66ff66f66f66f6ff66f
-        f69999999999999999666f6f666f66f66f6666f6f66f6f6f66f66f6ff66f
-        f69999999ff999999966ff6f666ff6f66f666ff6ff6f6f6ff6ff6f66f66f
-        f6999999f99f99999966666666666666666666666666666666666666666f
-        f699999999f999999966666666666666666666666666666666666666666f
-        f69999999f9999999966666666666666666666666666666666666666666f
-        f6999999ffff99999966666666666666666666666666666666666666666f
-        f6999999999999999966666666666666666666666666666666666666666f
-        ff66666666666666666666666666666666666666666666666666666666ff
-        .ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.
-        `)
-    i.setImage(img`
-        .ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.
-        ff66666666666666666666666666666666666666666666666666666666ff
-        f6666666666666666666666666666666666666666666666666666666666f
-        f6666666666666666666666666666666666666666666666666666666666f
-        f66666666666666666666666666666ff66666ff666ffff6666666666666f
-        f66666666fff66666666666666666f66f666f66f66f666f666666666666f
-        f6666666f99fff666f6666666666f6666f6f6666f6f6666f66666666666f
-        f666666f999f99ff6f6666666666f666666f6666f6f6666f66666666666f
-        f66fffffffffffffff6666666666f666666f6666f6f666f666666666666f
-        f6f55555222288888f6666666666f666666f6666f6ffff6666666666666f
-        f6fffff522228fffff6666666666f666666ffffff6f66f6666666666666f
-        f6ffddf522228fddff6666666666f666666f6666f6f666f666666666666f
-        f6ffddffffffffddff6666666666f666666f6666f6f6666f66666666666f
-        f66ffff666666ffff66666666666f6666f6f6666f6f6666f66666666666f
-        f6666666666666666666666666666f66f66f6666f6f6666f66666666666f
-        f66666666666666666666666666666ff666f6666f6f6666f66666666666f
-        f6666666666666666666666666666666666666666666666666666666666f
-        f6666666666666666666666666666666666666666666666666666666666f
-        ff66666666666666666666666666666666666666666666666666666666ff
-        .ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.
-        `)
-    pause(500)
-    Free_Play()
+    if (current_menu == 0) {
+        music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+        mySprite2.setImage(assets.image`myImage5`)
+        mySprite.setImage(assets.image`myImage`)
+        mySprite3.setImage(img`
+            .ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.
+            ff66666666666666666666666666666666666666666666666666666666ff
+            f6999999999999999966666666666666666666666666666666666666666f
+            f69999999ff999999966666666666666666666666666666666666666666f
+            f699999999f999999966666666666666666666666666666666666666666f
+            f699999999f999999966666666666666666666666666666666666666666f
+            f699999999f999999966666666666666666666666666666666666666666f
+            f6999999ffff99999966ff6fff6f66f6fff66ff6ff6fff6ff6ff6f66f66f
+            f6999999999999999966f66f6f6f66f66f666f66f66f6f6f66f66ff6f66f
+            f6ffffffffffffffff66f66fff6f66f66f666f66f66fff6ff6ff6ff6f66f
+            f6ffffffffffffffff666f6f666f66f66f6666f6f66ff66f66f66f6ff66f
+            f69999999999999999666f6f666f66f66f6666f6f66f6f6f66f66f6ff66f
+            f69999999ff999999966ff6f666ff6f66f666ff6ff6f6f6ff6ff6f66f66f
+            f6999999f99f99999966666666666666666666666666666666666666666f
+            f699999999f999999966666666666666666666666666666666666666666f
+            f69999999f9999999966666666666666666666666666666666666666666f
+            f6999999ffff99999966666666666666666666666666666666666666666f
+            f6999999999999999966666666666666666666666666666666666666666f
+            ff66666666666666666666666666666666666666666666666666666666ff
+            .ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.
+            `)
+        i.setImage(img`
+            .ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.
+            ff66666666666666666666666666666666666666666666666666666666ff
+            f6666666666666666666666666666666666666666666666666666666666f
+            f6666666666666666666666666666666666666666666666666666666666f
+            f66666666666666666666666666666ff66666ff666ffff6666666666666f
+            f66666666fff66666666666666666f66f666f66f66f666f666666666666f
+            f6666666f99fff666f6666666666f6666f6f6666f6f6666f66666666666f
+            f666666f999f99ff6f6666666666f666666f6666f6f6666f66666666666f
+            f66fffffffffffffff6666666666f666666f6666f6f666f666666666666f
+            f6f55555222288888f6666666666f666666f6666f6ffff6666666666666f
+            f6fffff522228fffff6666666666f666666ffffff6f66f6666666666666f
+            f6ffddf522228fddff6666666666f666666f6666f6f666f666666666666f
+            f6ffddffffffffddff6666666666f666666f6666f6f6666f66666666666f
+            f66ffff666666ffff66666666666f6666f6f6666f6f6666f66666666666f
+            f6666666666666666666666666666f66f66f6666f6f6666f66666666666f
+            f66666666666666666666666666666ff666f6666f6f6666f66666666666f
+            f6666666666666666666666666666666666666666666666666666666666f
+            f6666666666666666666666666666666666666666666666666666666666f
+            ff66666666666666666666666666666666666666666666666666666666ff
+            .ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.
+            `)
+        current_menu = 2
+        pause(500)
+        mySprite.setImage(img`
+            .ffffffffffffffffffffffffffffffffffffff.
+            ffffffffffffffffffffffffffffffffffffffff
+            ffffff5f2f81ff1f111f111f111f111f111fffff
+            ffffff5f2f811f1f1f1f1fff1fff1f1f1f1fffff
+            ffffff5f2f811f1f111f111f1fff111f111fffff
+            fffff5f2f8f1f11f1f1fff1f1fff1f1f11ffffff
+            fffff5f2f8f1f11f1f1fff1f1fff1f1f1f1fffff
+            fffff5f2f8f1ff1f1f1f111f111f1f1f1f1fffff
+            ffffffffffffffffffffffffffffffffffffffff
+            f11111111111111111111111111111111111111f
+            f1ffffffffffffffffffffffffffffffffffff1f
+            f11111111111111111111111111111111111111f
+            f111ff1f1f1ff1111ff1ff1fff1fff1ff1ff111f
+            f111f11f1f1ff1111f11f11f1f11f11f11f1111f
+            f111f11f1f1ff1111f11ff1fff11f11ff1f1111f
+            f111f11f1f1f111111f1f11ff111f11f111f111f
+            f111f11f1f1f111111f1f11f1f11f11f111f111f
+            f111ff1fff1f11111ff1ff1f1f1fff1ff1ff111f
+            f11111111111111111111111111111111111111f
+            f1ffffffffffffffffffffffffffffffffffff1f
+            f11111111111111111111111111111111111111f
+            .ffffffffffffffffffffffffffffffffffffff.
+            `)
+        mySprite2.setImage(img`
+            .ffffffffffffffffffffffffffffffffffffff.
+            f88888888888888888888888888888888888888f
+            f8ffffffffffffffffffffffffffffffffffff8f
+            f8f888888f5281f11111111111111f8888888f8f
+            f8ffffffff528111111111f11111ffffffffff8f
+            f8ffffffff5281f11f111111f11f1fffffffff8f
+            f8ffffffffffffffffffffffffffffffffffff8f
+            f8fffffffffff11fffffffffff1fffffffffff8f
+            f8ffffffffff1fffffffffffff1fffffffffff8f
+            f8ffff1fff1f1ff1f1111ff1f111f1fff1ffff8f
+            f8fffff1f1ff11f1f1fff1f1ff1ff1fff1ffff8f
+            f8ffffff1fff1ff1f1fff1f1ff1fff1f1fffff8f
+            f8fffff1f1ff1ff1f1fff1f1ff1fff1f1fffff8f
+            f8ffff1fff1f1ff1f1fff1f1fff1fff1ffffff8f
+            f8fffffffff1ffffffffffffffffff1fffffff8f
+            f8fffffffffff11111111111111ff1ffffffff8f
+            f8fffffffffff1f11111f1f111ff1fffffffff8f
+            f8ffffffffffff11f11ff1f1ff1fffffffffff8f
+            f8f8888888888111118111111118888888888f8f
+            f8ffffffffffffffffffffffffffffffffffff8f
+            f88888888888888888888888888888888888888f
+            .ffffffffffffffffffffffffffffffffffffff.
+            `)
+        mySprite3.setImage(img`
+            .ffffffffffffffffffffffffffffffffffffff.
+            f22222222222222222222222222222222222222f
+            f2ffffffffffffffffffffffffffffffffffff2f
+            f2ffffffff5281f11111111111111fffffffff2f
+            f2ffffffff528111111111f11111ffffffffff2f
+            f2ffffffff5281f11f111111f11f1fffffffff2f
+            f2ffffffffffffffffffffffffffffffffffff2f
+            f22222222222222222222222222222222222222f
+            f11121112111211121112111212221211121221f
+            f12221212121212222122122211211212121221f
+            f12221112121212222122111211211212121121f
+            f12221122111211222122221212121211121211f
+            f12221212121212222122221212221212121221f
+            f11121212121212222122111212221212121221f
+            f22222222222222222222222222222222222222f
+            f2ffffffffffffffffffffffffffffffffffff2f
+            f2ffff1111111f1111f1ff111111111f11ffff2f
+            f2fffff1f11f1f11f11ff11111f1f11111ffff2f
+            f2fffff1f1f1111111f1f11f111111111fffff2f
+            f2ffffffffffffffffffffffffffffffffffff2f
+            f22222222222222222222222222222222222222f
+            .ffffffffffffffffffffffffffffffffffffff.
+            `)
+        i.setImage(img`
+            .................444444.................
+            .............44445555554444.............
+            .........4444555555555555554444.........
+            ......44455f5fffffff52255555555444......
+            ....445555f5ff5ff5f5f522255555555544....
+            ...4555555fffffff5fff5222555555555554...
+            ..45555555f5fff5fff5f22555555555555554..
+            .f555f5ffff5f55ff5fffff5ffff5fff555ffff.
+            f1f5f1f1111f1ff1ff1111ff1111f111f5f1151f
+            f11f11f1ffff1ff1ff1ff1ff1ff1f1ff1ff1ffff
+            f1f1f1f111ff11f1ff1ff1ff1111f1ff1ff1111f
+            f1fff1f1ffff1f11ff1111ff11fff1ff1fffff1f
+            f1f5f1f1ffff1ff1ff1ff1ff1f1ff1ff1fffff1f
+            f1f5f1f1111f1ff1ff1ff1ff1ff1f111f5f1111f
+            .f555f5ffff5f55ff5f55ff5f55f5fff555ffff.
+            ..455555555555555555555555555555555554..
+            ...4555555555555555fffffffff5ff555554...
+            ....44555555555555fffff5f5fffff55544....
+            ......444555555555ff5fffffffff5444......
+            .........4444555555555555554444.........
+            .............44445555554444.............
+            .................444444.................
+            `)
+        mySprite.setPosition(55, 60)
+        mySprite2.setPosition(105, 60)
+        mySprite3.setPosition(55, 90)
+        i.setPosition(105, 90)
+    } else if (current_menu == 2) {
+        mySprite2.setImage(img`
+            .2222222222222222222222222222222222222222.
+            22ffffffffffffffffffffffffffffffffffffff22
+            2f88888888888888888888888888888888888888f2
+            2f8ffffffffffffffffffffffffffffffffffff8f2
+            2f8f888888f5281f11111111111111f8888888f8f2
+            2f8ffffffff528111111111f11111ffffffffff8f2
+            2f8ffffffff5281f11f111111f11f1fffffffff8f2
+            2f8ffffffffffffffffffffffffffffffffffff8f2
+            2f8fffffffffff11fffffffffff1fffffffffff8f2
+            2f8ffffffffff1fffffffffffff1fffffffffff8f2
+            2f8ffff1fff1f1ff1f1111ff1f111f1fff1ffff8f2
+            2f8fffff1f1ff11f1f1fff1f1ff1ff1fff1ffff8f2
+            2f8ffffff1fff1ff1f1fff1f1ff1fff1f1fffff8f2
+            2f8fffff1f1ff1ff1f1fff1f1ff1fff1f1fffff8f2
+            2f8ffff1fff1f1ff1f1fff1f1fff1fff1ffffff8f2
+            2f8fffffffff1ffffffffffffffffff1fffffff8f2
+            2f8fffffffffff11111111111111ff1ffffffff8f2
+            2f8fffffffffff1f11111f1f111ff1fffffffff8f2
+            2f8ffffffffffff11f11ff1f1ff1fffffffffff8f2
+            2f8f8888888888111118111111118888888888f8f2
+            2f8ffffffffffffffffffffffffffffffffffff8f2
+            2f88888888888888888888888888888888888888f2
+            22ffffffffffffffffffffffffffffffffffffff22
+            .2222222222222222222222222222222222222222.
+            `)
+        mySprite2.setPosition(105, 60)
+        pause(500)
+        mySprite.setPosition(500, 500)
+        mySprite2.setPosition(500, 500)
+        mySprite3.setPosition(500, 500)
+        i.setPosition(500, 500)
+        myMenu = miniMenu.createMenuFromArray([
+        miniMenu.createMenuItem("AHR", img`
+            ..fffff1ffffffffffff.
+            .f5555555555.......ff
+            f...................f
+            f...................f
+            fffff...............f
+            ....f...............f
+            .....fffff.........f.
+            ..........f........f.
+            ...........fff.....f.
+            ..............f....f.
+            ...............ff.f..
+            .................ff..
+            .................ff..
+            .................fff.
+            .................f.f.
+            .................ff..
+            `),
+        miniMenu.createMenuItem("Bristol", img`
+            . . . . f f f f f f f f f f f f f . . . . 
+            . . f f . . . . . . . . . . . . . f f . . 
+            . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
+            . . f f . . . . . . . . . . . . . f f . . 
+            . . . . f f f f f f 1 f f f f f f . . . . 
+            `),
+        miniMenu.createMenuItem("Charlotte", img`
+            . . . f f f f f f f f f f f f f f f . . . 
+            . . f . . . . . . . . . . . . . . . f . . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+            . . . f f . . . . . . . . . . . f f . . . 
+            . . . . . f f . . . . . . . f f . . . . . 
+            . . . . . . . f f f 1 f f f . . . . . . . 
+            `),
+        miniMenu.createMenuItem("Charlotte Roval", img`
+            . . . f f . . . . f f f f f f f f f . . . 
+            . . f . . f . . f . . . . . . . . . f . . 
+            . f . . . . f f . . . . . . . . . . . f . 
+            . f . . . . . . . . f f f f f f f . . f . 
+            f . . . . . . . . f . . . . . . . f . . f 
+            f . . . . . . . . f . . . . . . . f . . f 
+            f . . . . . . . . f . . . . . . . f . . f 
+            . f . . . . . . . . f f f . . . . f . f . 
+            . f . . . . . . . . . . . f . . . f . f . 
+            . . f 5 5 5 5 5 5 5 5 5 5 f . f f . f . . 
+            . . . f f f f f . . . . . f . f f f . . . 
+            . . . . . . . f . . . . . f . . . . . . . 
+            . . . . . . . f f f 1 f f f . . . . . . . 
+            `),
+        miniMenu.createMenuItem("Chicago", img`
+            . . . . . . . . . . f f f f f f . . . . . 
+            . . . . . . . . . . f . . . . . f f . . . 
+            . . . . . . . . . . f . . . . . . . f f . 
+            . . . . . . . . . . f . . . . . . . . . f 
+            . . . . . . . . . . f . . . . . . . . . f 
+            . 3 . . . . . . . . f . . . . . . . . . f 
+            f f f f f 1 f f f f . f f f f f f f f f f 
+            f 5 5 5 5 5 5 5 5 5 f . . . . . . . . . . 
+            f . . . . . . . . . f . . . . . . . . . . 
+            f . . . . . . . . . f . . . . . . . . . . 
+            f . . . f f f . . . f . . . . . . . . . . 
+            f . . f . . . f . . f . . . . . . . . . . 
+            f f f . . . . . f f f . . . . . . . . . . 
+            `),
+        miniMenu.createMenuItem("COTA", img`
+            ff...................
+            f.f..................
+            f5.f.................
+            f5.f..ff.............
+            f5.f..f.f..f.........
+            f5.f..f.f.f.ff.......
+            f5..ff..f.f...ff.....
+            f5......f.f.....ff...
+            f5.......f........ff.
+            15...........ff.....f
+            f5.ffff.ff..f..f...f.
+            f.f....f..ff....f.f..
+            f.f..............f...
+            ff...................
+            ff...................
+            f....................
+            `),
+        miniMenu.createMenuItem("Darlington", img`
+            . . . . . . . . . . . f f f f f . . . . . 
+            . . . . . . f f f f f . . . . . f f . . . 
+            . . f f f f . . . . . . . . . . . . f . . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+            . . f f . . . . . . . . . . . . f f . . . 
+            . . . . f f f f f f 1 f f f f f . . . . . 
+            `),
+        miniMenu.createMenuItem("Daytona", img`
+            . . . . f f f f f f f f f f f f f . . . . 
+            . . f f . . . . . . . . . . . . . f f . . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . . f . . . . . . . . . . . . . . . f . . 
+            . . . f f 5 5 5 5 5 5 5 5 5 5 5 f f . . . 
+            . . . . . f f . . . . . . . f f . . . . . 
+            . . . . . . . f f . . . f f . . . . . . . 
+            . . . . . . . . . f 1 f . . . . . . . . . 
+            `),
+        miniMenu.createMenuItem("Dover", img`
+            . . . . f f f f f f f f f f f f f . . . . 
+            . . f f . . . . . . . . . . . . . f f . . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
+            . . f f . . . . . . . . . . . . . f f . . 
+            . . . . f f f f f f 1 f f f f f f . . . . 
+            `),
+        miniMenu.createMenuItem("Echopark", img`
+            . . . f f f f f f f f f f f f f f f . . . 
+            . . f . . . . . . . . . . . . . . . f . . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+            . . . f f . . . . . . . . . . . f f . . . 
+            . . . . . f f . . . . . . . f f . . . . . 
+            . . . . . . . f f f 1 f f f . . . . . . . 
+            `),
+        miniMenu.createMenuItem("Homestead-Miami", img`
+            . . . . f f f f f f f f f f f f f . . . . 
+            . . f f . . . . . . . . . . . . . f f . . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
+            . . f f . . . . . . . . . . . . . f f . . 
+            . . . . f f f f f f 1 f f f f f f . . . . 
+            `),
+        miniMenu.createMenuItem("Indianapolis", img`
+            . . f f f f f f f f f f f f f f f f f . . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
+            . . f f f f f f f f f f f 1 f f f f f . . 
+            `),
+        miniMenu.createMenuItem("Iowa", img`
+            .....fffffffffff.....
+            ...ff...........ff...
+            ..f...............f..
+            .f.................f.
+            .f.................f.
+            f...................f
+            f...................f
+            f...................f
+            .f5................f.
+            .f.55..............f.
+            ..f..5555555555555f..
+            ...f.............f...
+            ....ff.........ff....
+            ......fff...fff......
+            .........f1f.........
+            `),
+        miniMenu.createMenuItem("Kansas", img`
+            . . . f f f f f f f f f f f f f f f . . . 
+            . . f . . . . . . . . . . . . . . . f . . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+            . . . f f . . . . . . . . . . . f f . . . 
+            . . . . . f f . . . . . . . f f . . . . . 
+            . . . . . . . f f . . . f f . . . . . . . 
+            . . . . . . . . . f 1 f . . . . . . . . . 
+            `),
+        miniMenu.createMenuItem("Las Vegas", img`
+            . . . f f f f f f f f f f f f f f f . . . 
+            . . f . . . . . . . . . . . . . . . f . . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+            . . . f f . . . . . . . . . . . f f . . . 
+            . . . . . f f . . . . . . . f f . . . . . 
+            . . . . . . . f f . . . f f . . . . . . . 
+            . . . . . . . . . f 1 f . . . . . . . . . 
+            `),
+        miniMenu.createMenuItem("Martinsville", img`
+            . . . f f f f f f f f f f f f f f f . . . 
+            . f f 5 5 . . . . . . . . . . . 5 5 f f . 
+            . f 5 . . . . . . . . . . . . . . . 5 f . 
+            f 5 . . . . . . . . . . . . . . . . . 5 f 
+            f 5 . . . . . . . . . . . . . . . . . 5 f 
+            3 f 5 . . . . . . . . . . . . . . . 5 f . 
+            . f f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f f . 
+            . . . f f f f f f f 1 f f f f f f f . . . 
+            `),
+        miniMenu.createMenuItem("Michigan", img`
+            . . . f f f f f f f f f f f f f f f . . . 
+            . f f . . . . . . . . . . . . . . . f f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+            . . . f f . . . . . . . . . . . f f . . . 
+            . . . . . f f f . . . . . f f f . . . . . 
+            . . . . . . . . f f 1 f f . . . . . . . . 
+            `),
+        miniMenu.createMenuItem("Nashville", img`
+            . . . f f f f f f f f f f f f f f f . . . 
+            . . f . . . . . . . . . . . . . . . f . . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+            . . . f f . . . . . . . . . . . f f . . . 
+            . . . . . f f . . . . . . . f f . . . . . 
+            . . . . . . . f f . . . f f . . . . . . . 
+            . . . . . . . . . f 1 f . . . . . . . . . 
+            `),
+        miniMenu.createMenuItem("Phoenix", img`
+            . . . f f f f f f f f f f f f f f f f . . 
+            . . f . . . 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
+            . f . . . 5 . . . . . . . . . . . . . 5 f 
+            . f . . 5 . . . . . . . . . . . . . . . f 
+            f . . . 5 . . . . . . . . . . . . . . . f 
+            f . . . 5 . . . . . . . . . . . . . . . f 
+            . f . . . 5 . . . . . . . . . . . . . . f 
+            . f . . . . 5 . . . . . . . . . . . . f . 
+            . . f . . . . 5 5 . . . . . . . . f f . . 
+            . . . f . . . . . . . . . . . f f . . . . 
+            . . . . f . . . . . . . f f f . . . . . . 
+            . . . . . f . . . f f f . . . . . . . . . 
+            . . . . . . f 1 f . . . . . . . . . . . . 
+            `),
+        miniMenu.createMenuItem("Pocono", img`
+            . . . . . . f f f . . . . . . . . . . . . 
+            . . . . . f . . . f f . . . . . . . . . . 
+            . . . . f . . . . . . f f . . . . . . . . 
+            . . . f . . . . . . . . . f f . . . . . . 
+            . . f . . . . . . . . . . . . f f . . . . 
+            . f . . . . . . . . . . . . . . . f f . . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f . . 5 5 5 5 5 5 5 5 5 5 5 . . . . f . 
+            . . f f f f f f f f 1 f f f f f f f f . . 
+            `),
+        miniMenu.createMenuItem("Portland", img`
+            . . . . . . . f f f . . . . . . . . . . . 
+            . . . f f f f . . . f f . . . . . . . . . 
+            . . . f . . . . . . . . f f . . . . . . . 
+            . . . . f . . . . . . . . . f . . . . . . 
+            . . . . . f . . . . . . . . . f . . . . . 
+            . f f . . f . . . . . . . . . . f f f . . 
+            f . . f f . . . . . . . . . . . . . . f . 
+            f . . . . . . f f . . . . . . . . . . . f 
+            f . . . . f f . f 5 5 5 5 5 5 5 5 5 5 . f 
+            . f f f f . . . f f f f f f f 1 f f f f . 
+            `),
+        miniMenu.createMenuItem("Rockingham", img`
+            . . . f f f f f f f f f f f f f f f . . . 
+            . . f 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 f . . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . . f . . . . . . . . . . . . . . . f . . 
+            . . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . . 
+            . . . . f . . . . . . . . . . . f . . . . 
+            . . . . . f f . . . . . f f f f . . . . . 
+            . . . . . . . f f f f 1 . . . . . . . . . 
+            `),
+        miniMenu.createMenuItem("Sonoma", img`
+            . . . . . . . . . . . . . . f f f f . . . 
+            . . . . . . . . . . . . . f . . . . f . . 
+            . . . . . . . . . f f f f . . . . . f . . 
+            . . . . . . . . f . . . . . . . . . . f . 
+            . . . . . . . . f . . . . . . . . . . f . 
+            . . . . . . . . f . . . . . . . . . . . f 
+            . . . . . . . . 5 f . . . . . . . . f f . 
+            . . . . . . . 5 5 f . . . . . . . f . . . 
+            . . . . . 5 5 1 f . . . . . . f f . . . . 
+            . . 5 5 5 f f . . . . . f f f . . . . . . 
+            . 5 f f f . . . . . f f . . . . . . . . . 
+            5 f . . . . . . . f . . . . . . . . . . . 
+            . 5 f f f f f f f . . . . . . . . . . . . 
+            `),
+        miniMenu.createMenuItem("Talladega", img`
+            . . . . f f f f f f f f f f f f f . . . . 
+            . . f f . . . . . . . . . . . . . f f . . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . . f . . . . . . . . . . . . . . . f . . 
+            . . . f f 5 5 5 5 5 5 5 5 5 5 5 f f . . . 
+            . . . . . f f . . . . . . . f 1 . . . . . 
+            . . . . . . . f f . . . f f . . . . . . . 
+            . . . . . . . . . f f f . . . . . . . . . 
+            `),
+        miniMenu.createMenuItem("Texas", img`
+            . . . f f f f f f f f f f f f f f f . . . 
+            . . f . . . . . . . . . . . . . . . f . . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+            . . . f f . . . . . . . . . . . f f . . . 
+            . . . . . f f . . . . . . . f f . . . . . 
+            . . . . . . . f f f 1 f f f . . . . . . . 
+            `),
+        miniMenu.createMenuItem("Watkins Glen", img`
+            . . . . . f f f f f f f f f . . . f f . . 
+            . . . . f . . . . . . . . . f f f . . f . 
+            . . . . f . . . . . . . . . . . . . . . f 
+            . . f f . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . f f f f f f f . . 
+            f . . . . . . . . . . f . . . . . . . . . 
+            f 5 . . . . . . . . . f . . . . . . . . . 
+            f 5 . . . . . . . . . f . . . . . . . . . 
+            f 5 5 5 5 5 5 5 5 5 5 f . . . . . . . . . 
+            . f f f f 1 f f f f f . . . . . . . . . . 
+            `),
+        miniMenu.createMenuItem("WWT Raceway", img`
+            . . . . . f f f f f . . . . . . . . . . . 
+            . . . f f . . . . . f f f f f . . . . . . 
+            . . f . . . . . . . . . . . . f f f f . . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . f . . . . . . . . . . . . . . . . . f . 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            f . . . . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . . f 
+            . f . . . . . . . . . . . . . . . . . f . 
+            . . f . . . . . . . . . . . . . . . . f . 
+            . . . f f 5 5 5 5 5 5 5 5 5 5 5 5 f f . . 
+            . . . . . f f f f f 1 f f f f f f . . . . 
+            `)
+        ])
+        myMenu.setTitle("Choose a Track")
+        myMenu.setFrame(img`
+            ffffffffffffffffffffffffffffffffffffffffffffffff
+            f6666666666666666666666666666666666666666666666f
+            f6222222222222222222222222222222222222222222226f
+            f6266666666666666666666666666666666666666666626f
+            f626ffffffffffffffffffffffffffffffffffffffff626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626f66666666666666666666666666666666666666f626f
+            f626ffffffffffffffffffffffffffffffffffffffff626f
+            f6266666666666666666666666666666666666666666626f
+            f6222222222222222222222222222222222222222222226f
+            f6666666666666666666666666666666666666666666666f
+            ffffffffffffffffffffffffffffffffffffffffffffffff
+            `)
+        myMenu.setMenuStyleProperty(miniMenu.MenuStyleProperty.Width, 160)
+        myMenu.setMenuStyleProperty(miniMenu.MenuStyleProperty.Height, 120)
+        myMenu.setMenuStyleProperty(miniMenu.MenuStyleProperty.Border, 1)
+        myMenu.setMenuStyleProperty(miniMenu.MenuStyleProperty.BorderColor, 16)
+        myMenu.setMenuStyleProperty(miniMenu.MenuStyleProperty.BackgroundColor, 2)
+        myMenu.setStyleProperty(miniMenu.StyleKind.Selected, miniMenu.StyleProperty.Background, 2)
+        myMenu.setPosition(80, 60)
+    }
 })
 browserEvents.One.onEvent(browserEvents.KeyEvent.Pressed, function () {
     music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
@@ -316,14 +911,18 @@ browserEvents.One.onEvent(browserEvents.KeyEvent.Pressed, function () {
         ff66666666666666666666666666666666666666666666666666666666ff
         .ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.
         `)
+    current_menu = 1
     pause(500)
+    careerstart()
 })
 let ProperVY = 0
 let ProperVX = 0
+let myMenu: miniMenu.MenuSprite = null
 let myMinimap: minimap.Minimap = null
 let OldVX = 0
 let OldVY = 0
 let speed2 = 0
+let current_menu = 0
 let mySprite8: Sprite = null
 let mySprite7: Sprite = null
 let mySprite6: Sprite = null
@@ -648,6 +1247,8 @@ mySprite8.setPosition(-200, -200)
 let deceleration = 0.2
 // Force applied during braking (linear reduction)
 let brakePower = 1
+current_menu = 0
+tiles.setCurrentTilemap(tilemap`level4`)
 // Force applied during braking (linear reduction)
 // Main update loop for physics
 game.onUpdate(function () {
