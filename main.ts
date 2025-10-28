@@ -64,6 +64,9 @@ browserEvents.Four.onEvent(browserEvents.KeyEvent.Pressed, function () {
     pause(500)
     Car()
 })
+/**
+ * Initialize a variable to track spin or rotation state
+ */
 function Career () {
 	
 }
@@ -198,9 +201,6 @@ function Split_Screen () {
     	
     }
 }
-/**
- * Initialize a variable to track spin or rotation state
- */
 browserEvents.Two.onEvent(browserEvents.KeyEvent.Pressed, function () {
     if (current_menu == 0) {
         music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
@@ -385,403 +385,6 @@ browserEvents.Two.onEvent(browserEvents.KeyEvent.Pressed, function () {
         mySprite2.setPosition(500, 500)
         mySprite3.setPosition(500, 500)
         i.setPosition(500, 500)
-        myMenu = miniMenu.createMenuFromArray([
-        miniMenu.createMenuItem("AHR", img`
-            ..fffff1ffffffffffff.
-            .f5555555555.......ff
-            f...................f
-            f...................f
-            fffff...............f
-            ....f...............f
-            .....fffff.........f.
-            ..........f........f.
-            ...........fff.....f.
-            ..............f....f.
-            ...............ff.f..
-            .................ff..
-            .................ff..
-            .................fff.
-            .................f.f.
-            .................ff..
-            `),
-        miniMenu.createMenuItem("Bristol", img`
-            . . . . f f f f f f f f f f f f f . . . . 
-            . . f f . . . . . . . . . . . . . f f . . 
-            . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
-            . . f f . . . . . . . . . . . . . f f . . 
-            . . . . f f f f f f 1 f f f f f f . . . . 
-            `),
-        miniMenu.createMenuItem("Charlotte", img`
-            . . . f f f f f f f f f f f f f f f . . . 
-            . . f . . . . . . . . . . . . . . . f . . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
-            . . . f f . . . . . . . . . . . f f . . . 
-            . . . . . f f . . . . . . . f f . . . . . 
-            . . . . . . . f f f 1 f f f . . . . . . . 
-            `),
-        miniMenu.createMenuItem("Charlotte Roval", img`
-            . . . f f . . . . f f f f f f f f f . . . 
-            . . f . . f . . f . . . . . . . . . f . . 
-            . f . . . . f f . . . . . . . . . . . f . 
-            . f . . . . . . . . f f f f f f f . . f . 
-            f . . . . . . . . f . . . . . . . f . . f 
-            f . . . . . . . . f . . . . . . . f . . f 
-            f . . . . . . . . f . . . . . . . f . . f 
-            . f . . . . . . . . f f f . . . . f . f . 
-            . f . . . . . . . . . . . f . . . f . f . 
-            . . f 5 5 5 5 5 5 5 5 5 5 f . f f . f . . 
-            . . . f f f f f . . . . . f . f f f . . . 
-            . . . . . . . f . . . . . f . . . . . . . 
-            . . . . . . . f f f 1 f f f . . . . . . . 
-            `),
-        miniMenu.createMenuItem("Chicago", img`
-            . . . . . . . . . . f f f f f f . . . . . 
-            . . . . . . . . . . f . . . . . f f . . . 
-            . . . . . . . . . . f . . . . . . . f f . 
-            . . . . . . . . . . f . . . . . . . . . f 
-            . . . . . . . . . . f . . . . . . . . . f 
-            . 3 . . . . . . . . f . . . . . . . . . f 
-            f f f f f 1 f f f f . f f f f f f f f f f 
-            f 5 5 5 5 5 5 5 5 5 f . . . . . . . . . . 
-            f . . . . . . . . . f . . . . . . . . . . 
-            f . . . . . . . . . f . . . . . . . . . . 
-            f . . . f f f . . . f . . . . . . . . . . 
-            f . . f . . . f . . f . . . . . . . . . . 
-            f f f . . . . . f f f . . . . . . . . . . 
-            `),
-        miniMenu.createMenuItem("COTA", img`
-            ff...................
-            f.f..................
-            f5.f.................
-            f5.f..ff.............
-            f5.f..f.f..f.........
-            f5.f..f.f.f.ff.......
-            f5..ff..f.f...ff.....
-            f5......f.f.....ff...
-            f5.......f........ff.
-            15...........ff.....f
-            f5.ffff.ff..f..f...f.
-            f.f....f..ff....f.f..
-            f.f..............f...
-            ff...................
-            ff...................
-            f....................
-            `),
-        miniMenu.createMenuItem("Darlington", img`
-            . . . . . . . . . . . f f f f f . . . . . 
-            . . . . . . f f f f f . . . . . f f . . . 
-            . . f f f f . . . . . . . . . . . . f . . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
-            . . f f . . . . . . . . . . . . f f . . . 
-            . . . . f f f f f f 1 f f f f f . . . . . 
-            `),
-        miniMenu.createMenuItem("Daytona", img`
-            . . . . f f f f f f f f f f f f f . . . . 
-            . . f f . . . . . . . . . . . . . f f . . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . . f . . . . . . . . . . . . . . . f . . 
-            . . . f f 5 5 5 5 5 5 5 5 5 5 5 f f . . . 
-            . . . . . f f . . . . . . . f f . . . . . 
-            . . . . . . . f f . . . f f . . . . . . . 
-            . . . . . . . . . f 1 f . . . . . . . . . 
-            `),
-        miniMenu.createMenuItem("Dover", img`
-            . . . . f f f f f f f f f f f f f . . . . 
-            . . f f . . . . . . . . . . . . . f f . . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
-            . . f f . . . . . . . . . . . . . f f . . 
-            . . . . f f f f f f 1 f f f f f f . . . . 
-            `),
-        miniMenu.createMenuItem("Echopark", img`
-            . . . f f f f f f f f f f f f f f f . . . 
-            . . f . . . . . . . . . . . . . . . f . . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
-            . . . f f . . . . . . . . . . . f f . . . 
-            . . . . . f f . . . . . . . f f . . . . . 
-            . . . . . . . f f f 1 f f f . . . . . . . 
-            `),
-        miniMenu.createMenuItem("Homestead-Miami", img`
-            . . . . f f f f f f f f f f f f f . . . . 
-            . . f f . . . . . . . . . . . . . f f . . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
-            . . f f . . . . . . . . . . . . . f f . . 
-            . . . . f f f f f f 1 f f f f f f . . . . 
-            `),
-        miniMenu.createMenuItem("Indianapolis", img`
-            . . f f f f f f f f f f f f f f f f f . . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
-            . . f f f f f f f f f f f 1 f f f f f . . 
-            `),
-        miniMenu.createMenuItem("Iowa", img`
-            .....fffffffffff.....
-            ...ff...........ff...
-            ..f...............f..
-            .f.................f.
-            .f.................f.
-            f...................f
-            f...................f
-            f...................f
-            .f5................f.
-            .f.55..............f.
-            ..f..5555555555555f..
-            ...f.............f...
-            ....ff.........ff....
-            ......fff...fff......
-            .........f1f.........
-            `),
-        miniMenu.createMenuItem("Kansas", img`
-            . . . f f f f f f f f f f f f f f f . . . 
-            . . f . . . . . . . . . . . . . . . f . . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
-            . . . f f . . . . . . . . . . . f f . . . 
-            . . . . . f f . . . . . . . f f . . . . . 
-            . . . . . . . f f . . . f f . . . . . . . 
-            . . . . . . . . . f 1 f . . . . . . . . . 
-            `),
-        miniMenu.createMenuItem("Las Vegas", img`
-            . . . f f f f f f f f f f f f f f f . . . 
-            . . f . . . . . . . . . . . . . . . f . . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
-            . . . f f . . . . . . . . . . . f f . . . 
-            . . . . . f f . . . . . . . f f . . . . . 
-            . . . . . . . f f . . . f f . . . . . . . 
-            . . . . . . . . . f 1 f . . . . . . . . . 
-            `),
-        miniMenu.createMenuItem("Martinsville", img`
-            . . . f f f f f f f f f f f f f f f . . . 
-            . f f 5 5 . . . . . . . . . . . 5 5 f f . 
-            . f 5 . . . . . . . . . . . . . . . 5 f . 
-            f 5 . . . . . . . . . . . . . . . . . 5 f 
-            f 5 . . . . . . . . . . . . . . . . . 5 f 
-            3 f 5 . . . . . . . . . . . . . . . 5 f . 
-            . f f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f f . 
-            . . . f f f f f f f 1 f f f f f f f . . . 
-            `),
-        miniMenu.createMenuItem("Michigan", img`
-            . . . f f f f f f f f f f f f f f f . . . 
-            . f f . . . . . . . . . . . . . . . f f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
-            . . . f f . . . . . . . . . . . f f . . . 
-            . . . . . f f f . . . . . f f f . . . . . 
-            . . . . . . . . f f 1 f f . . . . . . . . 
-            `),
-        miniMenu.createMenuItem("Nashville", img`
-            . . . f f f f f f f f f f f f f f f . . . 
-            . . f . . . . . . . . . . . . . . . f . . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
-            . . . f f . . . . . . . . . . . f f . . . 
-            . . . . . f f . . . . . . . f f . . . . . 
-            . . . . . . . f f . . . f f . . . . . . . 
-            . . . . . . . . . f 1 f . . . . . . . . . 
-            `),
-        miniMenu.createMenuItem("Phoenix", img`
-            . . . f f f f f f f f f f f f f f f f . . 
-            . . f . . . 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
-            . f . . . 5 . . . . . . . . . . . . . 5 f 
-            . f . . 5 . . . . . . . . . . . . . . . f 
-            f . . . 5 . . . . . . . . . . . . . . . f 
-            f . . . 5 . . . . . . . . . . . . . . . f 
-            . f . . . 5 . . . . . . . . . . . . . . f 
-            . f . . . . 5 . . . . . . . . . . . . f . 
-            . . f . . . . 5 5 . . . . . . . . f f . . 
-            . . . f . . . . . . . . . . . f f . . . . 
-            . . . . f . . . . . . . f f f . . . . . . 
-            . . . . . f . . . f f f . . . . . . . . . 
-            . . . . . . f 1 f . . . . . . . . . . . . 
-            `),
-        miniMenu.createMenuItem("Pocono", img`
-            . . . . . . f f f . . . . . . . . . . . . 
-            . . . . . f . . . f f . . . . . . . . . . 
-            . . . . f . . . . . . f f . . . . . . . . 
-            . . . f . . . . . . . . . f f . . . . . . 
-            . . f . . . . . . . . . . . . f f . . . . 
-            . f . . . . . . . . . . . . . . . f f . . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f . . 5 5 5 5 5 5 5 5 5 5 5 . . . . f . 
-            . . f f f f f f f f 1 f f f f f f f f . . 
-            `),
-        miniMenu.createMenuItem("Portland", img`
-            . . . . . . . f f f . . . . . . . . . . . 
-            . . . f f f f . . . f f . . . . . . . . . 
-            . . . f . . . . . . . . f f . . . . . . . 
-            . . . . f . . . . . . . . . f . . . . . . 
-            . . . . . f . . . . . . . . . f . . . . . 
-            . f f . . f . . . . . . . . . . f f f . . 
-            f . . f f . . . . . . . . . . . . . . f . 
-            f . . . . . . f f . . . . . . . . . . . f 
-            f . . . . f f . f 5 5 5 5 5 5 5 5 5 5 . f 
-            . f f f f . . . f f f f f f f 1 f f f f . 
-            `),
-        miniMenu.createMenuItem("Rockingham", img`
-            . . . f f f f f f f f f f f f f f f . . . 
-            . . f 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 f . . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . . f . . . . . . . . . . . . . . . f . . 
-            . . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . . 
-            . . . . f . . . . . . . . . . . f . . . . 
-            . . . . . f f . . . . . f f f f . . . . . 
-            . . . . . . . f f f f 1 . . . . . . . . . 
-            `),
-        miniMenu.createMenuItem("Sonoma", img`
-            . . . . . . . . . . . . . . f f f f . . . 
-            . . . . . . . . . . . . . f . . . . f . . 
-            . . . . . . . . . f f f f . . . . . f . . 
-            . . . . . . . . f . . . . . . . . . . f . 
-            . . . . . . . . f . . . . . . . . . . f . 
-            . . . . . . . . f . . . . . . . . . . . f 
-            . . . . . . . . 5 f . . . . . . . . f f . 
-            . . . . . . . 5 5 f . . . . . . . f . . . 
-            . . . . . 5 5 1 f . . . . . . f f . . . . 
-            . . 5 5 5 f f . . . . . f f f . . . . . . 
-            . 5 f f f . . . . . f f . . . . . . . . . 
-            5 f . . . . . . . f . . . . . . . . . . . 
-            . 5 f f f f f f f . . . . . . . . . . . . 
-            `),
-        miniMenu.createMenuItem("Talladega", img`
-            . . . . f f f f f f f f f f f f f . . . . 
-            . . f f . . . . . . . . . . . . . f f . . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . . f . . . . . . . . . . . . . . . f . . 
-            . . . f f 5 5 5 5 5 5 5 5 5 5 5 f f . . . 
-            . . . . . f f . . . . . . . f 1 . . . . . 
-            . . . . . . . f f . . . f f . . . . . . . 
-            . . . . . . . . . f f f . . . . . . . . . 
-            `),
-        miniMenu.createMenuItem("Texas", img`
-            . . . f f f f f f f f f f f f f f f . . . 
-            . . f . . . . . . . . . . . . . . . f . . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
-            . . . f f . . . . . . . . . . . f f . . . 
-            . . . . . f f . . . . . . . f f . . . . . 
-            . . . . . . . f f f 1 f f f . . . . . . . 
-            `),
-        miniMenu.createMenuItem("Watkins Glen", img`
-            . . . . . f f f f f f f f f . . . f f . . 
-            . . . . f . . . . . . . . . f f f . . f . 
-            . . . . f . . . . . . . . . . . . . . . f 
-            . . f f . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . f f f f f f f . . 
-            f . . . . . . . . . . f . . . . . . . . . 
-            f 5 . . . . . . . . . f . . . . . . . . . 
-            f 5 . . . . . . . . . f . . . . . . . . . 
-            f 5 5 5 5 5 5 5 5 5 5 f . . . . . . . . . 
-            . f f f f 1 f f f f f . . . . . . . . . . 
-            `),
-        miniMenu.createMenuItem("WWT Raceway", img`
-            . . . . . f f f f f . . . . . . . . . . . 
-            . . . f f . . . . . f f f f f . . . . . . 
-            . . f . . . . . . . . . . . . f f f f . . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . f . . . . . . . . . . . . . . . . . f . 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            f . . . . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . . f 
-            . f . . . . . . . . . . . . . . . . . f . 
-            . . f . . . . . . . . . . . . . . . . f . 
-            . . . f f 5 5 5 5 5 5 5 5 5 5 5 5 f f . . 
-            . . . . . f f f f f 1 f f f f f f . . . . 
-            `)
-        ])
         myMenu.setTitle("Choose a Track")
         myMenu.setFrame(img`
             ffffffffffffffffffffffffffffffffffffffffffffffff
@@ -917,11 +520,11 @@ browserEvents.One.onEvent(browserEvents.KeyEvent.Pressed, function () {
 })
 let ProperVY = 0
 let ProperVX = 0
-let myMenu: miniMenu.MenuSprite = null
 let myMinimap: minimap.Minimap = null
 let OldVX = 0
 let OldVY = 0
 let speed2 = 0
+let myMenu: miniMenu.MenuSprite = null
 let current_menu = 0
 let mySprite8: Sprite = null
 let mySprite7: Sprite = null
@@ -1249,6 +852,404 @@ let deceleration = 0.2
 let brakePower = 1
 current_menu = 0
 tiles.setCurrentTilemap(tilemap`level4`)
+myMenu = miniMenu.createMenuFromArray([
+miniMenu.createMenuItem("AHR", img`
+    ..fffff1ffffffffffff.
+    .f5555555555.......ff
+    f...................f
+    f...................f
+    fffff...............f
+    ....f...............f
+    .....fffff.........f.
+    ..........f........f.
+    ...........fff.....f.
+    ..............f....f.
+    ...............ff.f..
+    .................ff..
+    .................ff..
+    .................fff.
+    .................f.f.
+    .................ff..
+    `),
+miniMenu.createMenuItem("Bristol", img`
+    . . . . f f f f f f f f f f f f f . . . . 
+    . . f f . . . . . . . . . . . . . f f . . 
+    . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
+    . . f f . . . . . . . . . . . . . f f . . 
+    . . . . f f f f f f 1 f f f f f f . . . . 
+    `),
+miniMenu.createMenuItem("Charlotte", img`
+    . . . f f f f f f f f f f f f f f f . . . 
+    . . f . . . . . . . . . . . . . . . f . . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+    . . . f f . . . . . . . . . . . f f . . . 
+    . . . . . f f . . . . . . . f f . . . . . 
+    . . . . . . . f f f 1 f f f . . . . . . . 
+    `),
+miniMenu.createMenuItem("Charlotte Roval", img`
+    . . . f f . . . . f f f f f f f f f . . . 
+    . . f . . f . . f . . . . . . . . . f . . 
+    . f . . . . f f . . . . . . . . . . . f . 
+    . f . . . . . . . . f f f f f f f . . f . 
+    f . . . . . . . . f . . . . . . . f . . f 
+    f . . . . . . . . f . . . . . . . f . . f 
+    f . . . . . . . . f . . . . . . . f . . f 
+    . f . . . . . . . . f f f . . . . f . f . 
+    . f . . . . . . . . . . . f . . . f . f . 
+    . . f 5 5 5 5 5 5 5 5 5 5 f . f f . f . . 
+    . . . f f f f f . . . . . f . f f f . . . 
+    . . . . . . . f . . . . . f . . . . . . . 
+    . . . . . . . f f f 1 f f f . . . . . . . 
+    `),
+miniMenu.createMenuItem("Chicago", img`
+    . . . . . . . . . . f f f f f f . . . . . 
+    . . . . . . . . . . f . . . . . f f . . . 
+    . . . . . . . . . . f . . . . . . . f f . 
+    . . . . . . . . . . f . . . . . . . . . f 
+    . . . . . . . . . . f . . . . . . . . . f 
+    . 3 . . . . . . . . f . . . . . . . . . f 
+    f f f f f 1 f f f f . f f f f f f f f f f 
+    f 5 5 5 5 5 5 5 5 5 f . . . . . . . . . . 
+    f . . . . . . . . . f . . . . . . . . . . 
+    f . . . . . . . . . f . . . . . . . . . . 
+    f . . . f f f . . . f . . . . . . . . . . 
+    f . . f . . . f . . f . . . . . . . . . . 
+    f f f . . . . . f f f . . . . . . . . . . 
+    `),
+miniMenu.createMenuItem("COTA", img`
+    ff...................
+    f.f..................
+    f5.f.................
+    f5.f..ff.............
+    f5.f..f.f..f.........
+    f5.f..f.f.f.ff.......
+    f5..ff..f.f...ff.....
+    f5......f.f.....ff...
+    f5.......f........ff.
+    15...........ff.....f
+    f5.ffff.ff..f..f...f.
+    f.f....f..ff....f.f..
+    f.f..............f...
+    ff...................
+    ff...................
+    f....................
+    `),
+miniMenu.createMenuItem("Darlington", img`
+    . . . . . . . . . . . f f f f f . . . . . 
+    . . . . . . f f f f f . . . . . f f . . . 
+    . . f f f f . . . . . . . . . . . . f . . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+    . . f f . . . . . . . . . . . . f f . . . 
+    . . . . f f f f f f 1 f f f f f . . . . . 
+    `),
+miniMenu.createMenuItem("Daytona", img`
+    . . . . f f f f f f f f f f f f f . . . . 
+    . . f f . . . . . . . . . . . . . f f . . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . . f . . . . . . . . . . . . . . . f . . 
+    . . . f f 5 5 5 5 5 5 5 5 5 5 5 f f . . . 
+    . . . . . f f . . . . . . . f f . . . . . 
+    . . . . . . . f f . . . f f . . . . . . . 
+    . . . . . . . . . f 1 f . . . . . . . . . 
+    `),
+miniMenu.createMenuItem("Dover", img`
+    . . . . f f f f f f f f f f f f f . . . . 
+    . . f f . . . . . . . . . . . . . f f . . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
+    . . f f . . . . . . . . . . . . . f f . . 
+    . . . . f f f f f f 1 f f f f f f . . . . 
+    `),
+miniMenu.createMenuItem("Echopark", img`
+    . . . f f f f f f f f f f f f f f f . . . 
+    . . f . . . . . . . . . . . . . . . f . . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+    . . . f f . . . . . . . . . . . f f . . . 
+    . . . . . f f . . . . . . . f f . . . . . 
+    . . . . . . . f f f 1 f f f . . . . . . . 
+    `),
+miniMenu.createMenuItem("Homestead-Miami", img`
+    . . . . f f f f f f f f f f f f f . . . . 
+    . . f f . . . . . . . . . . . . . f f . . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
+    . . f f . . . . . . . . . . . . . f f . . 
+    . . . . f f f f f f 1 f f f f f f . . . . 
+    `),
+miniMenu.createMenuItem("Indianapolis", img`
+    . . f f f f f f f f f f f f f f f f f . . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
+    . . f f f f f f f f f f f 1 f f f f f . . 
+    `),
+miniMenu.createMenuItem("Iowa", img`
+    .....fffffffffff.....
+    ...ff...........ff...
+    ..f...............f..
+    .f.................f.
+    .f.................f.
+    f...................f
+    f...................f
+    f...................f
+    .f5................f.
+    .f.55..............f.
+    ..f..5555555555555f..
+    ...f.............f...
+    ....ff.........ff....
+    ......fff...fff......
+    .........f1f.........
+    `),
+miniMenu.createMenuItem("Kansas", img`
+    . . . f f f f f f f f f f f f f f f . . . 
+    . . f . . . . . . . . . . . . . . . f . . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+    . . . f f . . . . . . . . . . . f f . . . 
+    . . . . . f f . . . . . . . f f . . . . . 
+    . . . . . . . f f . . . f f . . . . . . . 
+    . . . . . . . . . f 1 f . . . . . . . . . 
+    `),
+miniMenu.createMenuItem("Las Vegas", img`
+    . . . f f f f f f f f f f f f f f f . . . 
+    . . f . . . . . . . . . . . . . . . f . . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+    . . . f f . . . . . . . . . . . f f . . . 
+    . . . . . f f . . . . . . . f f . . . . . 
+    . . . . . . . f f . . . f f . . . . . . . 
+    . . . . . . . . . f 1 f . . . . . . . . . 
+    `),
+miniMenu.createMenuItem("Martinsville", img`
+    . . . f f f f f f f f f f f f f f f . . . 
+    . f f 5 5 . . . . . . . . . . . 5 5 f f . 
+    . f 5 . . . . . . . . . . . . . . . 5 f . 
+    f 5 . . . . . . . . . . . . . . . . . 5 f 
+    f 5 . . . . . . . . . . . . . . . . . 5 f 
+    3 f 5 . . . . . . . . . . . . . . . 5 f . 
+    . f f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f f . 
+    . . . f f f f f f f 1 f f f f f f f . . . 
+    `),
+miniMenu.createMenuItem("Michigan", img`
+    . . . f f f f f f f f f f f f f f f . . . 
+    . f f . . . . . . . . . . . . . . . f f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+    . . . f f . . . . . . . . . . . f f . . . 
+    . . . . . f f f . . . . . f f f . . . . . 
+    . . . . . . . . f f 1 f f . . . . . . . . 
+    `),
+miniMenu.createMenuItem("Nashville", img`
+    . . . f f f f f f f f f f f f f f f . . . 
+    . . f . . . . . . . . . . . . . . . f . . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+    . . . f f . . . . . . . . . . . f f . . . 
+    . . . . . f f . . . . . . . f f . . . . . 
+    . . . . . . . f f . . . f f . . . . . . . 
+    . . . . . . . . . f 1 f . . . . . . . . . 
+    `),
+miniMenu.createMenuItem("Phoenix", img`
+    . . . f f f f f f f f f f f f f f f f . . 
+    . . f . . . 5 5 5 5 5 5 5 5 5 5 5 5 5 f . 
+    . f . . . 5 . . . . . . . . . . . . . 5 f 
+    . f . . 5 . . . . . . . . . . . . . . . f 
+    f . . . 5 . . . . . . . . . . . . . . . f 
+    f . . . 5 . . . . . . . . . . . . . . . f 
+    . f . . . 5 . . . . . . . . . . . . . . f 
+    . f . . . . 5 . . . . . . . . . . . . f . 
+    . . f . . . . 5 5 . . . . . . . . f f . . 
+    . . . f . . . . . . . . . . . f f . . . . 
+    . . . . f . . . . . . . f f f . . . . . . 
+    . . . . . f . . . f f f . . . . . . . . . 
+    . . . . . . f 1 f . . . . . . . . . . . . 
+    `),
+miniMenu.createMenuItem("Pocono", img`
+    . . . . . . f f f . . . . . . . . . . . . 
+    . . . . . f . . . f f . . . . . . . . . . 
+    . . . . f . . . . . . f f . . . . . . . . 
+    . . . f . . . . . . . . . f f . . . . . . 
+    . . f . . . . . . . . . . . . f f . . . . 
+    . f . . . . . . . . . . . . . . . f f . . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f . . 5 5 5 5 5 5 5 5 5 5 5 . . . . f . 
+    . . f f f f f f f f 1 f f f f f f f f . . 
+    `),
+miniMenu.createMenuItem("Portland", img`
+    . . . . . . . f f f . . . . . . . . . . . 
+    . . . f f f f . . . f f . . . . . . . . . 
+    . . . f . . . . . . . . f f . . . . . . . 
+    . . . . f . . . . . . . . . f . . . . . . 
+    . . . . . f . . . . . . . . . f . . . . . 
+    . f f . . f . . . . . . . . . . f f f . . 
+    f . . f f . . . . . . . . . . . . . . f . 
+    f . . . . . . f f . . . . . . . . . . . f 
+    f . . . . f f . f 5 5 5 5 5 5 5 5 5 5 . f 
+    . f f f f . . . f f f f f f f 1 f f f f . 
+    `),
+miniMenu.createMenuItem("Rockingham", img`
+    . . . f f f f f f f f f f f f f f f . . . 
+    . . f 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 f . . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . . f . . . . . . . . . . . . . . . f . . 
+    . . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . . 
+    . . . . f . . . . . . . . . . . f . . . . 
+    . . . . . f f . . . . . f f f f . . . . . 
+    . . . . . . . f f f f 1 . . . . . . . . . 
+    `),
+miniMenu.createMenuItem("Sonoma", img`
+    . . . . . . . . . . . . . . f f f f . . . 
+    . . . . . . . . . . . . . f . . . . f . . 
+    . . . . . . . . . f f f f . . . . . f . . 
+    . . . . . . . . f . . . . . . . . . . f . 
+    . . . . . . . . f . . . . . . . . . . f . 
+    . . . . . . . . f . . . . . . . . . . . f 
+    . . . . . . . . 5 f . . . . . . . . f f . 
+    . . . . . . . 5 5 f . . . . . . . f . . . 
+    . . . . . 5 5 1 f . . . . . . f f . . . . 
+    . . 5 5 5 f f . . . . . f f f . . . . . . 
+    . 5 f f f . . . . . f f . . . . . . . . . 
+    5 f . . . . . . . f . . . . . . . . . . . 
+    . 5 f f f f f f f . . . . . . . . . . . . 
+    `),
+miniMenu.createMenuItem("Talladega", img`
+    . . . . f f f f f f f f f f f f f . . . . 
+    . . f f . . . . . . . . . . . . . f f . . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . . f . . . . . . . . . . . . . . . f . . 
+    . . . f f 5 5 5 5 5 5 5 5 5 5 5 f f . . . 
+    . . . . . f f . . . . . . . f 1 . . . . . 
+    . . . . . . . f f . . . f f . . . . . . . 
+    . . . . . . . . . f f f . . . . . . . . . 
+    `),
+miniMenu.createMenuItem("Texas", img`
+    . . . f f f f f f f f f f f f f f f . . . 
+    . . f . . . . . . . . . . . . . . . f . . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . . f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f . . 
+    . . . f f . . . . . . . . . . . f f . . . 
+    . . . . . f f . . . . . . . f f . . . . . 
+    . . . . . . . f f f 1 f f f . . . . . . . 
+    `),
+miniMenu.createMenuItem("Watkins Glen", img`
+    . . . . . f f f f f f f f f . . . f f . . 
+    . . . . f . . . . . . . . . f f f . . f . 
+    . . . . f . . . . . . . . . . . . . . . f 
+    . . f f . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . f f f f f f f . . 
+    f . . . . . . . . . . f . . . . . . . . . 
+    f 5 . . . . . . . . . f . . . . . . . . . 
+    f 5 . . . . . . . . . f . . . . . . . . . 
+    f 5 5 5 5 5 5 5 5 5 5 f . . . . . . . . . 
+    . f f f f 1 f f f f f . . . . . . . . . . 
+    `),
+miniMenu.createMenuItem("WWT Raceway", img`
+    . . . . . f f f f f . . . . . . . . . . . 
+    . . . f f . . . . . f f f f f . . . . . . 
+    . . f . . . . . . . . . . . . f f f f . . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . f . . . . . . . . . . . . . . . . . f . 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    f . . . . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . . f 
+    . f . . . . . . . . . . . . . . . . . f . 
+    . . f . . . . . . . . . . . . . . . . f . 
+    . . . f f 5 5 5 5 5 5 5 5 5 5 5 5 f f . . 
+    . . . . . f f f f f 1 f f f f f f . . . . 
+    `)
+])
+myMenu.setPosition(5000, 5000)
 // Force applied during braking (linear reduction)
 // Main update loop for physics
 game.onUpdate(function () {
@@ -1312,6 +1313,65 @@ game.onUpdate(function () {
     }
     // Rotate speedometer needle based on current speed
     transformSprites.rotateSprite(mySprite8, Math.map(speed2, 0, 370, 0, 182))
+})
+game.onUpdate(function () {
+    myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
+        if (selectedIndex == 0) {
+        	
+        } else if (selectedIndex == 1) {
+        	
+        } else if (selectedIndex == 2) {
+        	
+        } else if (selectedIndex == 3) {
+        	
+        } else if (selectedIndex == 4) {
+        	
+        } else if (selectedIndex == 5) {
+        	
+        } else if (selectedIndex == 6) {
+        	
+        } else if (selectedIndex == 7) {
+        	
+        } else if (selectedIndex == 8) {
+        	
+        } else if (selectedIndex == 9) {
+        	
+        } else if (selectedIndex == 10) {
+        	
+        } else if (selectedIndex == 11) {
+        	
+        } else if (selectedIndex == 12) {
+        	
+        } else if (selectedIndex == 13) {
+        	
+        } else if (selectedIndex == 14) {
+        	
+        } else if (selectedIndex == 15) {
+        	
+        } else if (selectedIndex == 16) {
+        	
+        } else if (selectedIndex == 17) {
+        	
+        } else if (selectedIndex == 18) {
+        	
+        } else if (selectedIndex == 19) {
+        	
+        } else if (selectedIndex == 20) {
+        	
+        } else if (selectedIndex == 21) {
+        	
+        } else if (selectedIndex == 22) {
+        	
+        } else if (selectedIndex == 23) {
+        	
+        } else if (selectedIndex == 24) {
+        	
+        } else if (selectedIndex == 25) {
+        	
+        } else if (selectedIndex == 26) {
+        	
+        }
+    })
 })
 game.onUpdateInterval(100, function () {
     mySprite4.setPosition(mySprite5.x, mySprite5.y)
