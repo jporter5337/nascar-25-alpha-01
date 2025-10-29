@@ -369,6 +369,7 @@ function fpx2 () {
     music.stopAllSounds()
     myMinimap = minimap.minimap(MinimapScale.Sixteenth, 1, 15)
     minimap.includeSprite(myMinimap, mySprite5, MinimapSpriteScale.MinimapScale)
+    mySprite6.setImage(minimap.getImage(minimap.minimap(MinimapScale.Sixteenth, 1, 15)))
 }
 function fpx14 () {
 	
@@ -390,12 +391,6 @@ function fpx23 () {
 }
 function careerstart () {
 	
-}
-function Split_Screen () {
-    let menu1 = 0
-    if (browserEvents.Two.isPressed() && menu1 == 2) {
-    	
-    }
 }
 browserEvents.Two.onEvent(browserEvents.KeyEvent.Pressed, function () {
     if (current_menu == 0) {
