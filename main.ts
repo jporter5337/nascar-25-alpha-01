@@ -1324,111 +1324,111 @@ game.onUpdate(function () {
     myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
         if (selectedIndex == 0) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 1) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 2) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 3) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 4) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 5) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 6) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 7) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 8) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 9) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 10) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 11) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 12) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 13) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 14) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 15) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 16) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 17) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 18) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 19) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 20) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 21) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 22) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 23) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 24) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 25) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         } else if (selectedIndex == 26) {
             music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
-            pause(500)
+            pause(100)
             myMenu.close()
         }
     })
