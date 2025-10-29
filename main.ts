@@ -120,6 +120,11 @@ browserEvents.Three.onEvent(browserEvents.KeyEvent.Pressed, function () {
         `)
     pause(500)
 })
+browserEvents.ArrowUp.onEvent(browserEvents.KeyEvent.Pressed, function () {
+    if (true) {
+    	
+    }
+})
 function Free_Play () {
     let speed = 0
     sprites.destroy(mySprite)
@@ -186,8 +191,8 @@ function Free_Play () {
     mySprite8.setPosition(140, 117)
     Render.setViewAngleInDegree(270)
 }
-browserEvents.N.onEvent(browserEvents.KeyEvent.Pressed, function () {
-    music.play(music.createSong(hex`0078000408010206001c00010a006400f401640000040000000000000000000000000000000002320004000800031d272c08000c00012a0c0010000320272910001400012714001800031d252718001c0001241c0020000320222709010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c8003e00000001000c000102030405060708090a0b040005000100080009000200080c000d00010010001100020008140015000100180019000200081c001d000100`), music.PlaybackMode.LoopingInBackground)
+browserEvents.R.onEvent(browserEvents.KeyEvent.Pressed, function () {
+    music.play(music.stringPlayable("G B A G C5 B A B ", 120), music.PlaybackMode.LoopingInBackground)
 })
 function Car () {
 	
@@ -353,6 +358,7 @@ browserEvents.Two.onEvent(browserEvents.KeyEvent.Pressed, function () {
         mySprite3.setPosition(55, 90)
         i.setPosition(105, 90)
     } else if (current_menu == 2) {
+        music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
         mySprite2.setImage(img`
             .2222222222222222222222222222222222222222.
             22ffffffffffffffffffffffffffffffffffffff22
@@ -1317,59 +1323,113 @@ game.onUpdate(function () {
 game.onUpdate(function () {
     myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
         if (selectedIndex == 0) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 1) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 2) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 3) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 4) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 5) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 6) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 7) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 8) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 9) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 10) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 11) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 12) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 13) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 14) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 15) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 16) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 17) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 18) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 19) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 20) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 21) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 22) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 23) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 24) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 25) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         } else if (selectedIndex == 26) {
-        	
+            music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
+            pause(500)
+            myMenu.close()
         }
     })
 })
